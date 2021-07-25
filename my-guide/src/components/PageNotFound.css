@@ -1,0 +1,16 @@
+.not-found {
+  color: red;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+.nav-bar {
+  background-color: blueviolet;
+}
+.nav-links {
+  display: inline-block;
+}
+.nav-link {
+  margin-left: 10px;
+  display: inline;
+}
