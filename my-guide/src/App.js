@@ -1,9 +1,10 @@
 import "./App.css";
 import NavBar from "./components/Navbar";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import ContactUs from "./components/ContactUs";
 import NotFound from "./components/PageNotFound";
+import Details from "./components/Details";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/contact-us" component={ContactUs} />
           <Route exact path="/" component={Home} />
+          <Route path="/details/:id" component={Details} />
           <Route exact to="*" component={NotFound} />
         </Switch>
       </div>
